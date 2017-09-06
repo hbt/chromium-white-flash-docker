@@ -1,0 +1,10 @@
+version: '3'
+
+services: 
+  chromium:
+    build:  
+      context: . 
+    container_name: hbtlabs/chromium-white-flash
+# edit path
+#    volumes:
+#      - /media/hassen/linux-tmp/chromium/src2:/src
