@@ -1,0 +1,7 @@
+## Chromium docker build instructions for https://github.com/hbtlabs/chromium-white-flash-fix
+
+- select the version to checkout (view Dockerfile)
+- docker-compose build
+- docker-compose run chromium
+- ubuntu 14.04 deb files in /home/user/chromium/src/out/Release
+- view https://github.com/hbtlabs/chromium-white-flash-fix for source code + instructions
