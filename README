@@ -5,3 +5,9 @@
 - docker-compose run chromium
 - ubuntu 14.04 deb files in /home/user/chromium/src/out/Release
 - view https://github.com/hbtlabs/chromium-white-flash-fix for source code + instructions
+
+
+## Recommendations
+
+- rent cloud vm with highcpus since compilation can take hours on regular computers. 
+- estimated cost from start to finish ~4$ on 64vcpu google cloud 
