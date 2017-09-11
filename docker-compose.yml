@@ -4,6 +4,6 @@ services:
   chromium:
     build:  
       context: . 
-    container_name: hbtlabs/chromium-white-flash
+    container_name: hbtlabs/chromium-build
     volumes:
       - ./out:/out
