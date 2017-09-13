@@ -61,7 +61,9 @@ RUN fetch --nohooks chromium
 RUN cd src && git fetch && git checkout tags/57.0.2925.0 && git checkout -b v/57.0.2925.0
 
 # build ubuntu deps
-RUN sudo src/build/install-build-deps.sh --no-prompt 
+ADD sources.list /home/user/chromium
+RUN sudo chmod 777 /etc/apt/sources.list && sudo cat /home/user/chromium/sources.list >> /etc/apt/sources.list
+RUN sudo apt-get update -q && sudo src/build/install-build-deps.sh --no-prompt 
 
 # reset sub repositories and sync
 RUN gclient sync --with_branch_heads --with_tags -Rv --disable-syntax-validation
